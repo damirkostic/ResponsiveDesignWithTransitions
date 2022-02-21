@@ -1,0 +1,161 @@
+/*stiliziranje*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font-size: Arial;
+}
+/*wrapper*/
+.wrapper {
+    max-width: 1200px;
+    margin: auto;
+}
+/*header*/
+header {
+    background-image: url("img/cover.jpg");
+    background-size: cover; 
+}
+.elementi-header {
+    width: 100%;
+    color: white;
+    padding-top: 100px;
+    text-align: center;
+    padding-bottom: 100px;
+}
+.elementi-header img:hover {
+    transform: rotate(360deg);
+    transition: width 2s, height 2s, transform 2s;
+    
+}
+.elementi-header h2, .elementi-header p {
+    padding-bottom: 20px;
+}
+.elementi-header .gumb a {
+    background-color: #199EB8;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px 5px 5px 5px;
+} 
+.elementi-header .gumb a:hover {
+    text-shadow: 10px black;
+    background-color: orangered;
+    width: 200px;
+    transition: .5s linear;
+}
+/*navigacija*/
+.navigacija {
+    width: 100%;
+    float: left;
+    background-color: #199EB8;
+}
+.navigacija ul {
+    width: 70%;
+    list-style-type: none; 
+}
+.navigacija li {
+    width: 14%;
+    float: left;
+}
+.navigacija a:link, .navigacija a:visited {
+    height: 30px;
+    line-height: 200%;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    background-color: #199EB8;
+    padding: 20px 10px 20px 10px;
+}
+.navigacija a:hover, .navigacija a:active {
+    background-color: orangered;
+    font-weight: bold;
+    transition: .3s linear;
+}
+.navigacija img {
+    width: 80px;
+}
+/*MAIN*/
+.drugi-red {
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+.drugi-red h2 {
+    color: #199EB8;
+    padding-top: 20px;
+}
+.prvi h2, .drugi h2, .treci h2 {
+    color: #199EB8;
+    padding-bottom: 20px; 
+}
+.prvi p, .drugi p, .treci p {
+    color: #999;
+    padding-bottom: 30px;
+}
+.prvi {
+    width: 33%;
+    float: left;
+}
+.prvi i, .drugi i, .treci i {
+    background-color: #199EB8;
+    color: white;
+    border-radius: 50%;
+    font-size: 40px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.prvi i:hover , .drugi i:hover , .treci i:hover {
+    background-color: orangered;
+    transform: 0.5s;
+}
+.drugi {
+    width: 33%;
+    float: left;
+}
+.treci {
+    width: 33%;
+    float: left;
+}
+/*treci-sa-slikom*/
+.treci-red {
+    width: 100%;
+    float: left;
+    background-image: url("img/parallax-bg.jpg");
+    background-size: cover;
+}
+.slika-treci img {
+    width: 100%;
+    float: left;
+}
+
+/*THE END*/
+.peti-red {
+    width: 100%;
+    text-align: center;
+    float: left;
+}
+.peti-red h2 {
+    color: #199EB8;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+/*footer*/
+footer {
+    width: 100%;
+    float: left;
+    background-color: black;
+    padding-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+    .navigacija li {
+        width: 100%;
+    }
+    .navigacija ul {
+        width: 100%;
+    }
+    .prvi, .drugi, .treci {
+        width: 100%;
+    }
+}
